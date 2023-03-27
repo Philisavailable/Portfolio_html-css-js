@@ -1,0 +1,101 @@
+#menu{
+    height: 100vh;
+    background: rgb(51, 53, 52);
+    padding-top: 5vh;
+    padding-top: 2.5em;
+    display: none;
+}
+#menu li{
+    list-style: none;
+    text-align: center;
+    width: 100%;
+    font-size: 1.2rem;
+    line-height: 4rem;
+    background: rgba(83, 79, 65, 0.499);
+    margin: 2vh 0;
+}
+
+#menu a{
+    text-decoration: none;
+    color: whitesmoke;
+    text-shadow: 0px 0px 10px #000000;
+    transition: all 0.3s ease-out;
+}
+#menu a:hover{
+   color: rgb(51, 202, 61);
+    transition: all 0.3s ease-out;
+    text-shadow: none;
+}
+#croix{
+    position: absolute;
+    top: 2vh;
+    right: 2vw;
+    font-size: 2.5em;
+    color:rgb(236, 236, 236);
+    cursor: pointer;
+    margin-left: 80vw;
+    margin-bottom: 2vh;
+    transition: all 0.5s ease;
+}
+#croix:hover{
+    color: rgb(52, 212, 62);
+    transition: all 0.3s ease-out;
+}
+
+#menu #CV{
+    margin-top: 5vh;
+    background: rgba(10, 38, 91, 0.588);
+    text-shadow: 0px 0px 10px #000000;
+    transition: all 0.3s ease-out;
+}
+#CV a{
+    color: aliceblue;
+
+}
+
+#CV a:hover{
+    color: rgb(52, 212, 62);
+    transition: all 0.3s ease-out;
+    text-shadow: none;
+}
+#reseaux{
+    margin-top: 10vh;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    color: aliceblue;
+}
+#reseaux i{
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+}
+#reseaux i:hover{
+    color: rgb(52, 212, 62);
+    transition: all 0.3s ease-out;
+}
+
+@media only screen 
+   and (min-width : 1200px) {
+    #menu{
+        width: 105px;
+        padding-top: 15vh;
+        display: block;
+        position: fixed;
+        z-index: 2;
+    }
+
+    #croix{
+        display: none;
+    }
+   
+    #menu li{
+        font-size: 1rem;
+        line-height: 4rem;
+    }
+    #menu #CV{
+        margin-top: 10vh;
+    }
+    #reseaux{
+        font-size: 1.6rem;
+    }
+}

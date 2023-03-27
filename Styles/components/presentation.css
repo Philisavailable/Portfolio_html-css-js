@@ -1,0 +1,165 @@
+
+/* MON PARCOURS */
+article h2{
+    text-align: center;
+    margin-bottom: 5vh;
+    text-shadow: 0px 0px 3px #000000;
+}
+article p{
+    color: aliceblue;
+    text-align: center;
+    margin: 5vh 5%;
+    width: 86%;
+    font-size: 14px;
+}
+#parcours div{
+    position: relative;
+    width: 80%;
+    margin: 15vh 10vw;
+}
+#parcours div p{
+    color: aliceblue;
+    position: absolute;
+    font-size: 0.6em;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 20% 5% 0 5%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.381);
+    box-shadow: 10px 10px 107px 0px rgb(85, 88, 86) inset;
+    line-height: 3em;
+}
+#parcours div img{
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+/* MES COMPETENCES */
+#skills{
+    margin: 5vh 0;
+}
+#skills h2{
+    text-align: center;
+    margin: 10vh auto 5vh auto;
+    text-shadow: 0px 0px 3px #000000;
+}
+
+#langages div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 90%;
+    color: aliceblue;
+    margin: 2vh 0;
+
+}
+
+#langages div .bar{
+    width: 80%;
+    margin-right: 2vw;
+}
+#langages div i{
+    font-size: 2.5rem;
+    margin-left: 5%;
+}
+
+#langages div:nth-of-type(1):hover{
+    color: RGB(229, 76, 33);
+}
+#langages div:nth-of-type(2):hover{
+    color: RGB(31, 108, 181);
+
+}
+#langages div:nth-of-type(3):hover{
+    color: RGB(240, 217, 30);
+}
+#langages div:nth-of-type(4):hover{
+    color: RGB(116, 119, 175);
+}
+
+
+.jauge{
+    height: 2vh;
+    border-radius: 10px;
+    box-shadow: 0px 6px 9px -3px rgba(0,0,0,0.96);
+    position: absolute;
+}
+.bar{
+    background: #000;
+    height: 2vh;
+    border-radius: 10px;
+    box-shadow: 0px 6px 9px -3px rgba(0,0,0,0.96);
+    position: relative;
+}
+#langages div:nth-of-type(1) .jauge{
+    width: 70%;
+    background: RGB(229, 76, 33);
+}
+#langages div:nth-of-type(2) .jauge{
+    width: 70%;
+    background: RGB(31, 108, 181);
+}
+#langages div:nth-of-type(3) .jauge{
+    width: 20%;
+    background: RGB(240, 217, 30);
+}
+#langages div:nth-of-type(4) .jauge{
+    width: 5%;
+    background: RGB(116, 119, 175);
+}
+
+@media only screen 
+   and (min-width : 768px) {
+    #parcours div p{
+        font-size: 1.1em;
+    }
+    article p{
+        font-size: 1.4rem;
+    }
+    
+}
+@media only screen 
+   and (min-width : 1200px) {
+    #presentation{
+        margin-left: 105px;
+    }
+    #parcours{
+        margin-top: 10vh;
+        display: flex;
+    }
+    #parcours div{
+    margin: 10vh 10vw;
+    display: flex;
+    flex-direction: column-reverse;
+    }
+    #parcours div p{
+        position: relative;
+        max-width: 100%;
+        max-height: 50vh;
+        font-size: 1rem;
+        margin: 0;
+        background: none;
+        box-shadow: none;
+        z-index: unset;
+    }
+    #parcours div img{
+        min-width: 60%;
+        max-width: 100%;
+        max-height: 50vh;
+        object-fit: contain;
+        z-index: unset;
+    }
+    
+    article{
+        margin-left: 2vw;
+        max-width: 50%;
+        line-height: 2em;
+    }
+    
+    
+    
+}

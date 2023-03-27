@@ -1,0 +1,169 @@
+@import url(../Styles/components/header_mobile.css);
+@import url(../Styles/components/menu.css);
+@import url(../Styles/components/presentation.css);
+@import url(../Styles/components/portfolio.css);
+@import url(../Styles/components/contact.css);
+@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Asap', sans-serif;
+    background: rgb(85, 88, 86);
+    font-size: 1.6rem;
+}
+h2{
+    color: aliceblue;
+}
+#index section{
+    margin:10vh 10vw;
+}
+#index section h1{
+    font-size: 3rem;
+}
+#index section h2{
+    margin: 2vh 0;
+    font-size: 2rem;
+}
+#index section h1,#index section h2{
+    color: aliceblue;
+    text-shadow: 0px 0px 10px #000000;
+}
+#index button{
+    font-size: 1.6rem;
+    padding: 10px;
+    margin: 5vh 0;
+    background: rgb(85, 88, 86);;
+    color: rgb(43, 176, 52);
+    text-shadow: 0px 0px 3px #000000;
+    font-weight: bold;
+    border: 2px solid rgb(43, 176, 52);
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    position: relative;
+    z-index: 2;
+}
+#index button:hover{
+    box-shadow: 0px 0px 7px #000000;;
+    text-shadow: none;
+    transition: all 0.3s ease-out;
+}
+#button-mute{
+    height: 100px;
+    width: 150px;
+    position: absolute;
+    text-align: end;
+    top: 0;
+    right: 3vw;
+}
+#select{
+    height: 130px;
+    position: absolute;
+    cursor: pointer;
+    z-index: 2;
+    transition: all 0.5s ease;
+}
+#button-mute {
+    display: none;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0.5fr 1fr;
+    grid-column-gap: 15px;
+    grid-row-gap: 0px;
+    align-items: center;
+    justify-items: center;
+}
+#fire{
+    color: rgb(255, 0, 0);
+    text-shadow: 0px 0px 6px rgb(0, 0, 0);
+}
+#mute{
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 6px rgb(0, 0, 0);
+}
+
+#fire { grid-area: 1 / 2 / 2 / 3; }
+#mute { grid-area: 2 / 1 / 3 / 2; }
+#select { grid-area: 2 / 2 / 3 / 3; }
+
+
+@media only screen 
+   and (min-width : 768px) {
+    #index section{
+        padding: 20vh 10vw;
+    }
+    .mousemove {
+     color: rgb(255, 0, 0);
+     position: absolute;
+     width: 20px;
+     height: 20px;
+     border-radius: 50%;
+     border: solid 1px currentColor;
+     transform: translate(-55%, -55%);
+     z-index: 1;
+     transition: all 0.1s ease-out;
+     }
+     .mousemove:before {
+     content: '';
+     position: absolute;
+     left: 0px;
+     top: 8px;
+     width: 12px;
+     height: 1px;
+     border-left: solid 3px currentColor;
+     border-right: solid 3px currentColor;
+    }
+          
+     .mousemove:after {
+     content: '';
+     position: absolute;
+     left: 8.5px;
+     top: 0px;
+     width: 1px;
+     height: 12px;
+     border-top: solid 3px currentColor;
+     border-bottom: solid 3px currentColor;
+    }
+
+    .hole{
+        width: 14px;
+        height: 14px;
+        background: black;
+        border-radius: 10px;
+        border: 4px solid rgb(50, 49, 49);
+        position: absolute;
+        transform: translate(-55%, -55%);
+        z-index: 0;
+    }
+    
+    .inner_hole {
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: linear-gradient(0deg, rgb(45 44 44) 40%, rgba(19,19,19,1) 60%);
+        transform: translate(70%, 70%);
+    }
+      
+    .outer_hole {
+        background-image: linear-gradient(0deg, rgb(175, 175, 175) 10%, rgba(61,61,61,1) 50%, rgba(19,19,19,1) 86%);
+        width: 12px;
+    height: 12px;
+    transform: translate(-60%, -60%);
+    position: absolute;
+    z-index: 0;
+    border-radius: 20px;
+    }
+    
+}
+
+@media only screen 
+   and (min-width : 1200px) {
+    body{
+        display: flex;
+    }
+    #button-mute {
+        display: grid;
+    }
+}

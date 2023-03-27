@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio BERTOLA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="../Styles/app.css">
+</head>
+<body>
+    <header>
+        <div id="burger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div id="menu">
+            <ul>
+                <li><i id="croix" class="fa-regular fa-circle-xmark"></i></li>
+                <li><a href="../index.html">Acceuil</a></li>
+                <li><a href="./presentation.html">Présentation</a></li>
+                <li><a href="./portfolio.html">Portfolio</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li id="CV"><a  href="../assets/doc/CV_PBERTOLA.pdf" download="BERTOLA CV">Mon CV</a></li>
+            </ul>
+            <div id="reseaux">
+                <a href="https://www.linkedin.com/in/philippe-bertola/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Philisavailable"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </header>
+    <main id="contact">
+        <div id="formulaire">
+            <h2>Contactez-moi !</h2>
+            <form action="#">
+                <div>
+                    <label for="name"></label>
+                    <input placeholder="Nom" type="text" name="name" id="name">
+                    <label for="mail"></label>
+                    <input placeholder="Mail" type="email" name="mail" id="mail">
+                    <label for="subject"></label>
+                </div>
+                <input placeholder="Objet" type="text" name="subject" id="subject">
+                <label for="message"></label>
+                <textarea placeholder="Message" name="message" id="message" cols="30" rows="10"></textarea>
+                <input type="submit" value="Envoyer">
+            </form>
+        </div>
+        <div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21015.670644806283!2d2.265685025836926!3d48.82084694732368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67a8bb6cb2ec7%3A0x8b26d0771a6e27a1!2s92130%20Issy-les-Moulineaux!5e0!3m2!1sen!2sfr!4v1674656767664!5m2!1sen!2sfr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </main>
+
+
+    <script src="../js/menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+#formulaire h2{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5vh;
+    text-shadow: 0px 0px 3px #000000;
+}
+#formulaire form{
+    margin: 0 5%;
+}
+#formulaire form input{
+    height: 6vh;
+    width: 100%;
+    margin-bottom: 2vh;
+    padding-left:5%;
+    background: #000;
+    border: none;
+    color: rgb(120, 125, 121);
+}
+#formulaire form textarea{
+    resize: none;
+    width: 100%;
+    margin-bottom: 4vh;
+    font-family: asap;
+    padding:5%  5%;
+    background: #000;
+    border: none;
+    color: rgb(120, 125, 121);
+}
+#formulaire form input:last-child{
+    padding: 0;
+    width: 50%;
+    margin-left: 50%;
+    background: rgb(85, 88, 86);;
+    color: rgb(43, 176, 52);
+    text-shadow: 0px 0px 3px #000000;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border: 2px solid rgb(43, 176, 52);
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+
+}
+#formulaire form input:last-child:hover{
+    box-shadow: 0px 0px 7px #000000;;
+    text-shadow: none;
+    transition: all 0.3s ease-out;
+}
+#map{
+    margin: 5vh 5%;
+    height: 60vh;
+    width: 90vw;
+}
+@media only screen 
+   and (min-width : 768px) {
+    #formulaire form input:last-child{
+        font-size: 1.5rem;
+    }
+}
+@media only screen 
+   and (min-width : 1200px) {
+    #contact{
+        margin-left: 105px;
+        width: 100%;
+        display: flex;
+    }
+    #map{
+        height: 100vh;
+        width: 50%;
+        margin:0;
+    }
+    #formulaire {
+        margin-top: 10vh;
+        width: 50%;
+        height: 80vh;
+    }
+    #formulaire form{
+        width:90%;
+        margin: auto;
+    }
+    #formulaire div input{
+    width: 49.3%;
+    }
+    form input, form textarea{
+        font-size: 1.1rem;
+    }
+    #formulaire form input:last-child{
+        font-size: 1rem;
+    }
+
+   }

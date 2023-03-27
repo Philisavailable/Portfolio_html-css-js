@@ -1,0 +1,27 @@
+
+#burger{
+    height: 15vh;
+}
+#burger i{
+    position: fixed;
+    top: 2vh;
+    right: 3vw;
+    font-size: 2.5rem;
+    background: rgba(0, 0, 0, 0.206);
+    color: aliceblue;
+    padding: 1px 5px;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.3s ease-out;
+}
+#burger i:hover{
+    color: rgb(52, 212, 62);
+    transition: all 0.3s ease-out;
+}
+
+@media only screen 
+   and (min-width : 1200px) {
+    #burger{
+        display: none;
+    }
+}
