@@ -32,7 +32,8 @@ let bulletHole = (e) => {
 index.addEventListener('click',bulletHole)
 
 mute.addEventListener("click", () => {
-    if (!isActive) {
+    isActive = !isActive;
+    if (isActive) {
         mute.style.transform = "rotate(0deg)";
     } else {
         mute.style.transform = "rotate(-90deg)";
