@@ -4,7 +4,7 @@ const mute = document.getElementById("select");
 
 let isActive = true;
 
-gunShot = () =>{
+gunShot = () => {
     const gunShot = new Audio();
     gunShot.src = "./assets/song/Barrett-M82.mp3";
     gunShot.play();
@@ -16,7 +16,6 @@ window.addEventListener('mousemove', (e) => {
 });
 
 let bulletHole = (e) => {
-        // e.preventDefault();
     if(window.innerWidth >= 768 && isActive){
         gunShot();
         let newDivBullet = document.createElement("div");
@@ -33,8 +32,7 @@ let bulletHole = (e) => {
 index.addEventListener('click',bulletHole)
 
 mute.addEventListener("click", () => {
-    isActive = !isActive;
-    if (isActive) {
+    if (!isActive) {
         mute.style.transform = "rotate(0deg)";
     } else {
         mute.style.transform = "rotate(-90deg)";
